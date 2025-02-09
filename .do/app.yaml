@@ -1,0 +1,12 @@
+name: jalinanweb
+services:
+  - name: web
+    git:
+      branch: main
+      repo_clone_url: https://github.com/jalinanorg/jalinanweb.git
+    build_command: npm run build
+    run_command: npm run preview
+    envs:
+      - key: NODE_ENV
+        value: production
+    http_port: 4173
