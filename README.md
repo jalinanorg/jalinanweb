@@ -6,7 +6,7 @@ Support us: [https://jmm.sini.my/sumbangan](https://jmm.sini.my/sumbangan)
 
 ## Development
 
-![Jalinan Web Screenshot](screenshot.webp)
+![Jalinan Web Screenshot](https://raw.githubusercontent.com/jalinanorg/jalinanweb/refs/heads/main/public/screenshot.webp)
 
 ```bash
 # Install dependencies
