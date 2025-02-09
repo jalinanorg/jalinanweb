@@ -6,6 +6,8 @@ Support us: [https://jmm.sini.my/sumbangan](https://jmm.sini.my/sumbangan)
 
 ## Development
 
+![Jalinan Web Screenshot](screenshot.webp)
+
 ```bash
 # Install dependencies
 npm install
