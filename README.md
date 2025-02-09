@@ -16,7 +16,3 @@ npm run dev
 # Build for production
 npm run build
 ```
-
-## License
-
-Copyright 2025 Pertubuhan Jalinan Muslim Malaysia. All rights reserved.
