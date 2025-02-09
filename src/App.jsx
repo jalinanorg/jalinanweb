@@ -193,8 +193,10 @@ const App = () => {
                 <path d="M39.2 205.1h22.7v58.2c0 5.5-1.4 10.4-4.2 14.6-2.8 4.2-6.5 7.5-11.4 9.8-4.8 2.3-10.4 3.5-16.7 3.5-5.4 0-10.4-.9-14.9-2.8s-8.1-4.9-10.8-9c-2.7-4.1-4-9.4-4-15.9H23c.1 2.1.4 3.9 1.1 5.4.6 1.5 1.6 2.6 2.7 3.3 1.2.7 2.6 1.1 4.3 1.1 1.7 0 3.2-.4 4.3-1.1 1.2-.7 2.1-1.9 2.7-3.3.6-1.5.9-3.3 1-5.5v-58.3zM94.9 290H70l28-85h31.5l28 85h-24.9L114 228.4h-.7L94.9 290zm-4.6-33.5h46.8v17.3H90.3v-17.3zm75.5 33.5v-85h23.1v66.4h34.4V290h-57.5zm89.8-84.9v85h-23.1v-85h23.1zm84.4 0v85h-19.2l-30.7-44.6h-.5V290h-23.1v-85h19.6l30.2 44.5h.7V205h23zm33 84.9h-24.9l28-85h31.5l28 85h-24.9l-18.6-61.6h-.7L373 290zm-4.6-33.5h46.8v17.3h-46.8v-17.3zm149-51.4v85h-19.2l-30.7-44.6h-.5V290h-23.1v-85h19.6l30.2 44.5h.7V205h23z" />
               </svg>
             </div>
-            <div className="text-center text-gray-600 text-sm">
-              <div>PERTUBUHAN JALINAN MUSLIM MALAYSIA</div>
+            <div className="text-center text-gray-600 text-sm mb-8">
+              <div className="font-bold">
+                PERTUBUHAN JALINAN MUSLIM MALAYSIA
+              </div>
               <div className="text-xs">PPM-014-10-29082018</div>
             </div>
 
