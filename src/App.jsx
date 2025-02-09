@@ -322,6 +322,7 @@ const App = () => {
             <div className="mb-12 text-center">
               <p>Sebarang pertanyaan sila emel ke</p>
               <span className="text-emerald-800">salam@jalinan.org</span>
+              <p className="my-4 text-xs">Tulis emel dengan baik & jelas.</p>
               <div className="flex flex-col items-center mt-4">
                 <img src={maybankLogo} alt="Maybank" className="my-8 h-6" />
                 <p className="text-sm text-gray-600">
