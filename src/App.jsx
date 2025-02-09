@@ -209,8 +209,9 @@ const App = () => {
                 >
                   <h2 className="text-lg mb-3">
                     <span className="font-medium">{site.prefix}</span>
+                    <span className="text-emerald-500">{site.domain}</span>
                   </h2>
-                  <p className="text-sm text-gray-600 flex-grow font-light">
+                  <p className="text-sm text-gray-600 flex-grow font-light leading-relaxed">
                     {site.description}
                   </p>
                   <a
