@@ -8,11 +8,20 @@ export default defineConfig({
     port: 8080,
     strictPort: true,
     host: true,
-    allowedHosts: [
-      "localhost",
-      "*.ondigitalocean.app",
-      "jalinan.org",
-      "*.jalinan.org",
-    ],
+    allowedHosts: ["localhost", "jalinan.org", "*.jalinan.org"],
+  },
+  build: {
+    minify: "terser",
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
   },
 });
