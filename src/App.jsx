@@ -172,7 +172,7 @@ const AppContent = () => {
             {/* Theme Toggle Button */}
             <button
               onClick={toggleTheme}
-              className="fixed top-4 right-4 p-0 m-0 bg-transparent border-0 appearance-none focus:outline-none"
+              className="absolute top-4 right-4 p-0 m-0 bg-transparent border-0 appearance-none focus:outline-none"
               style={{ background: "none" }}
               aria-label="Toggle dark mode"
             >
