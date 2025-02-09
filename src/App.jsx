@@ -173,15 +173,15 @@ const App = () => {
   }, [sites.length]);
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden overflow-y-auto">
+    <div className="overflow-y-auto overflow-x-hidden w-full min-h-screen">
       <div className="relative z-10 min-h-screen bg-[#D1E4DD]/90">
         <div className="min-h-screen bg-[#D1E4DD]">
-          <div className="relative z-10 flex flex-col items-center p-8 max-w-full">
+          <div className="flex relative z-10 flex-col items-center p-8 max-w-full">
             {/* Logo Section */}
-            <div className="mb-4 mt-8 flex flex-col items-center">
+            <div className="flex flex-col items-center mt-8 mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-48 h-auto mb-2"
+                className="mb-2 w-48 h-auto"
                 viewBox="0 0 517.4 291.2"
               >
                 <path
@@ -193,7 +193,7 @@ const App = () => {
                 <path d="M39.2 205.1h22.7v58.2c0 5.5-1.4 10.4-4.2 14.6-2.8 4.2-6.5 7.5-11.4 9.8-4.8 2.3-10.4 3.5-16.7 3.5-5.4 0-10.4-.9-14.9-2.8s-8.1-4.9-10.8-9c-2.7-4.1-4-9.4-4-15.9H23c.1 2.1.4 3.9 1.1 5.4.6 1.5 1.6 2.6 2.7 3.3 1.2.7 2.6 1.1 4.3 1.1 1.7 0 3.2-.4 4.3-1.1 1.2-.7 2.1-1.9 2.7-3.3.6-1.5.9-3.3 1-5.5v-58.3zM94.9 290H70l28-85h31.5l28 85h-24.9L114 228.4h-.7L94.9 290zm-4.6-33.5h46.8v17.3H90.3v-17.3zm75.5 33.5v-85h23.1v66.4h34.4V290h-57.5zm89.8-84.9v85h-23.1v-85h23.1zm84.4 0v85h-19.2l-30.7-44.6h-.5V290h-23.1v-85h19.6l30.2 44.5h.7V205h23zm33 84.9h-24.9l28-85h31.5l28 85h-24.9l-18.6-61.6h-.7L373 290zm-4.6-33.5h46.8v17.3h-46.8v-17.3zm149-51.4v85h-19.2l-30.7-44.6h-.5V290h-23.1v-85h19.6l30.2 44.5h.7V205h23z" />
               </svg>
             </div>
-            <div className="text-center text-gray-600 text-sm mb-8">
+            <div className="mb-8 text-sm text-center text-gray-600">
               <div className="font-bold">
                 PERTUBUHAN JALINAN MUSLIM MALAYSIA
               </div>
@@ -201,17 +201,17 @@ const App = () => {
             </div>
 
             {/* Grid of Sites and Hadith */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-screen-lg mx-auto mb-16 overflow-x-hidden">
+            <div className="grid overflow-x-hidden grid-cols-1 gap-6 mx-auto mb-16 w-full max-w-screen-lg md:grid-cols-2 lg:grid-cols-3">
               {sites.map((site) => (
                 <div
                   key={site.name}
-                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 flex flex-col h-full text-center"
+                  className="flex flex-col p-6 h-full text-center bg-white rounded-xl shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
                 >
-                  <h2 className="text-lg mb-3">
+                  <h2 className="mb-3 text-lg">
                     <span className="font-medium">{site.prefix}</span>
                     <span className="text-emerald-500">{site.domain}</span>
                   </h2>
-                  <p className="text-sm text-gray-600 flex-grow font-light leading-relaxed">
+                  <p className="flex-grow text-sm font-light leading-relaxed text-gray-600">
                     {site.description}
                   </p>
                   <a
@@ -222,7 +222,7 @@ const App = () => {
                   >
                     <span className="text-white">Lawati {site.prefix}</span>
                     <svg
-                      className="ml-2 h-4 w-4 text-white"
+                      className="ml-2 w-4 h-4 text-white"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -240,16 +240,16 @@ const App = () => {
               ))}
 
               {/* Hadith Quote */}
-              <div className="col-span-1 md:col-span-2 mt-8 lg:col-span-3 relative bg-white/80 backdrop-blur-sm shadow-lg rounded-3xl">
+              <div className="relative col-span-1 mt-8 rounded-3xl shadow-lg backdrop-blur-sm md:col-span-2 lg:col-span-3 bg-white/80">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center">
-                    <span className="text-white text-2xl font-serif leading-none">
+                  <div className="flex justify-center items-center w-8 h-8 bg-emerald-500 rounded-full">
+                    <span className="pt-4 font-serif text-3xl leading-none text-white">
                       &quot;
                     </span>
                   </div>
                 </div>
                 <div className="px-8 py-10">
-                  <div className="text-center relative">
+                  <div className="relative text-center">
                     <p className="text-[15px] text-gray-800 leading-relaxed font-light">
                       Jika mati seorang manusia itu akan terputuslah catatan
                       amalannya melainkan tiga perkara, sedekah jariah, ilmu
@@ -257,8 +257,60 @@ const App = () => {
                       kebaikan.
                     </p>
                     <div className="mt-3">
-                      <p className="text-sm text-gray-500 font-light">
+                      <p className="text-sm font-light text-gray-500">
                         Hadis riwayat Imam Muslim – 1631
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Misi & Visi */}
+              <div className="grid col-span-1 gap-6 mt-8 md:col-span-2 lg:col-span-3 md:grid-cols-2">
+                {/* Misi */}
+                <div className="relative rounded-3xl backdrop-blur-sm bg-white/80">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div className="flex justify-center items-center w-8 h-8 bg-emerald-500 rounded-full">
+                      <span className="text-lg font-medium leading-none text-white">
+                        M
+                      </span>
+                    </div>
+                  </div>
+                  <div className="px-8 py-10">
+                    <div className="text-center">
+                      <h3 className="mb-4 text-lg font-bold text-emerald-800">
+                        MISI
+                      </h3>
+                      <p className="text-[15px] text-gray-800 leading-relaxed font-light">
+                        Mendigitalkan kandungan dari naskhah ke skrin,
+                        memastikan setiap insan dapat belajar, memahami, dan
+                        menghayati ilmu tanpa batas – selagi ada daya, selagi
+                        ada cahaya.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Visi */}
+                <div className="relative rounded-3xl backdrop-blur-sm bg-white/80">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div className="flex justify-center items-center w-8 h-8 bg-emerald-500 rounded-full">
+                      <span className="text-lg font-medium leading-none text-white">
+                        V
+                      </span>
+                    </div>
+                  </div>
+                  <div className="px-8 py-10">
+                    <div className="text-center">
+                      <h3 className="mb-4 text-lg font-bold text-emerald-800">
+                        VISI
+                      </h3>
+                      <p className="text-[15px] text-gray-800 leading-relaxed font-light">
+                        Merevolusikan akses kepada ilmu Islam dengan
+                        menjadikannya sebahagian daripada kehidupan moden, di
+                        mana teknologi bukan lagi sekadar alat, tetapi ruang
+                        tanpa batas yang membawa ilmu ke setiap jiwa, setiap
+                        masa.
                       </p>
                     </div>
                   </div>
@@ -267,18 +319,18 @@ const App = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="text-center mb-12">
+            <div className="mb-12 text-center">
               <p>Sebarang pertanyaan sila emel ke</p>
               <span className="text-emerald-800">salam@jalinan.org</span>
-              <div className="mt-4 flex flex-col items-center">
-                <img src={maybankLogo} alt="Maybank" className="h-6 my-8" />
-                <p className="text-gray-600 text-sm">
+              <div className="flex flex-col items-center mt-4">
+                <img src={maybankLogo} alt="Maybank" className="my-8 h-6" />
+                <p className="text-sm text-gray-600">
                   Nama Akaun:{" "}
                   <span className="font-medium">
                     Pertubuhan Jalinan Muslim Malaysia
                   </span>
                 </p>
-                <p className="text-gray-600 text-sm">
+                <p className="text-sm text-gray-600">
                   Nombor akaun:{" "}
                   <span className="font-medium">5622 6364 3287</span>
                 </p>
@@ -292,9 +344,9 @@ const App = () => {
             >
               <div className="flex items-center">
                 {/* Info Tab with chevron shape - now stretches to left edge */}
-                <div className="flex items-center min-w-0 flex-1">
+                <div className="flex flex-1 items-center min-w-0">
                   <div className="relative flex-none flex items-center bg-[#00C388] text-white h-[40px] min-w-[80px] mr-3">
-                    <div className="flex items-center gap-2 pl-4 pr-3">
+                    <div className="flex gap-2 items-center pr-3 pl-4">
                       <svg
                         className="w-[18px] h-[18px]"
                         fill="none"
@@ -320,9 +372,9 @@ const App = () => {
                       }}
                     ></div>
                   </div>
-                  <div className="min-w-0 flex-1">
+                  <div className="flex-1 min-w-0">
                     <div className="text-[13px] text-gray-600 truncate">
-                      <span className="font-medium ml-3">
+                      <span className="ml-3 font-medium">
                         {currentSite.prefix}
                       </span>
                       {" — "}
@@ -340,7 +392,7 @@ const App = () => {
                           (prevIndex - 1 + sites.length) % sites.length
                       )
                     }
-                    className="px-2 py-2 hover:bg-black/5 transition-colors"
+                    className="px-2 py-2 transition-colors hover:bg-black/5"
                   >
                     <svg
                       className="w-[14px] h-[14px] text-gray-400"
@@ -362,7 +414,7 @@ const App = () => {
                         (prevIndex) => (prevIndex + 1) % sites.length
                       )
                     }
-                    className="px-2 py-2 hover:bg-black/5 transition-colors"
+                    className="px-2 py-2 transition-colors hover:bg-black/5"
                   >
                     <svg
                       className="w-[14px] h-[14px] text-gray-400"
