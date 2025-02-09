@@ -328,7 +328,7 @@ const App = () => {
                 </div>
 
                 {/* Navigation Buttons */}
-                <div className="flex">
+                <div className="hidden md:flex">
                   <button
                     onClick={() =>
                       setCurrentSiteIndex(
