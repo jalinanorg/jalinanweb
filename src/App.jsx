@@ -362,6 +362,14 @@ const AppContent = () => {
 
             {/* Contact Info */}
             <div className="mb-12 text-center">
+              <iframe
+                id="sini-form-embed"
+                src="https://jalinan.sini.my/embed/forms/sumbangan"
+                style={{ width: "100%", border: 0, overflow: "hidden" }}
+                scrolling="no"
+                title="Sini Form"
+              ></iframe>
+              <script src="https://jalinan.sini.my/embed.min.js"></script>
               <p>Sebarang pertanyaan sila emel ke</p>
               <span className="text-[var(--color-accent)]">
                 salam@jalinan.org
