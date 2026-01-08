@@ -365,7 +365,7 @@ const AppContent = () => {
                     href="https://jmm.sini.my/form/sumbangan"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center w-full gap-3 px-6 py-4 text-base font-semibold text-white rounded-2xl shadow-md transition-all bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] hover:text-white focus:text-white hover:-translate-y-0.5"
+                    className="flex items-center justify-center w-full gap-3 px-6 py-4 text-base font-semibold !text-white rounded-2xl shadow-md transition-all bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] hover:!text-white focus:!text-white hover:-translate-y-0.5"
                   >
                     Sumbangan untuk JMM
                     <svg
