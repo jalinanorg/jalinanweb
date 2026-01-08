@@ -358,20 +358,23 @@ const AppContent = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="col-span-1 mt-10 md:col-span-2 lg:col-span-3">
+                <div className="mx-auto w-full max-w-4xl">
+                  <iframe
+                    id="sini-form-embed"
+                    src="https://jmm.sini.my/embed/forms/sumbangan"
+                    style={{ width: "100%", border: 0, overflow: "hidden" }}
+                    scrolling="no"
+                    title="Sini Form"
+                  ></iframe>
+                  <script src="https://jmm.sini.my/embed.min.js"></script>
+                </div>
+              </div>
             </div>
 
             {/* Contact Info */}
             <div className="mb-12 text-center">
-              <div className="flex relative z-10 flex-col items-center p-8 max-w-full">
-                <iframe
-                  id="sini-form-embed"
-                  src="https://jmm.sini.my/embed/forms/sumbangan"
-                  style={{ width: "100%", border: 0, overflow: "hidden" }}
-                  scrolling="no"
-                  title="Sini Form"
-                ></iframe>
-                <script src="https://jmm.sini.my/embed.min.js"></script>
-              </div>
               <p>Sebarang pertanyaan sila emel ke</p>
               <span className="text-[var(--color-accent)]">
                 salam@jalinan.org
