@@ -361,14 +361,28 @@ const AppContent = () => {
 
               <div className="col-span-1 mt-10 md:col-span-2 lg:col-span-3">
                 <div className="mx-auto w-full max-w-4xl">
-                  <iframe
-                    id="sini-form-embed"
-                    src="https://jmm.sini.my/embed/forms/sumbangan"
-                    style={{ width: "100%", border: 0, overflow: "hidden" }}
-                    scrolling="no"
-                    title="Sini Form"
-                  ></iframe>
-                  <script src="https://jmm.sini.my/embed.min.js"></script>
+                  <a
+                    href="https://jmm.sini.my/form/sumbangan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-full gap-3 px-6 py-4 text-base font-semibold text-white rounded-2xl shadow-md transition-all bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] hover:-translate-y-0.5"
+                  >
+                    Sumbangan untuk JMM
+                    <svg
+                      className="w-5 h-5 text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
